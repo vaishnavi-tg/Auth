@@ -1,0 +1,13 @@
+<html>
+    <title>Frontend</title>
+    <script>
+        async function getAnimalData(){
+            alert("Button clicked")
+            const response=await fetch("https://fakerapi.it/api/v1/persons")
+            const finalData=await response.json()
+            console.log(finaldata)        }
+    </script>
+    <body>
+        <button onclick="getAnimalData()">Get animal data </button>
+    </body>
+</html>
